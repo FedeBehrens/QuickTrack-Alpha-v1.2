@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body { 
+                min-width: 420px; 
+                overflow-x: hidden; 
+                font-family: Arial, sans-serif; 
+                font-size: 12px; 
+            }
+            input, textarea { 
+                width: 420px; 
+            }
+            input#save { 
+                font-weight: bold; width: auto; 
+            }
+        </style>
+        <script src="popup.js"></script>
+    </head>
+    <body>
+        <form id="getUTM">
+        	<p><label for="site">Site</label><br />
+            <input type="text" id="site" name="site" size="6" value=""/></p>
+            <p><label for="source">Source</label><br />
+            <input type="text" id="source" name="source" size="6" value="" /></p>
+            <p><label for="medium">Medium</label><br />
+            <input type="text" id="medium" name="medium" size="6" value="" /></p>
+            <p><label for="campaign">Campaign</label><br />
+            <input type="text" id="campaign" name="campaign" size="6" value="" /></p>
+            <p>
+                <input id="save" type="submit" value="Build" onclick="return Submit()" />
+            </p>
+            
+            <p><label for="output">Tracking Link</label><br />
+            <input type="text" id="trackinglink" name="trackinglink" size="6" value="" /> </p>
+        </form>
+         <p style = "font-size: 10px">Drop an email to fede@ladderdigital.com for feature requests/any other questions.</p>
+    </body>
+</html>
